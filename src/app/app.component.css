@@ -1,0 +1,10 @@
+h1{
+    color: green;
+}
+.app-container{
+    max-width: 500px;
+    margin-toP: 30px;
+}
+.nav-li{
+    display: inline-block;
+}

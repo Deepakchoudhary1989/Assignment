@@ -1,0 +1,14 @@
+<div class="policy-editor-container">
+  
+    <h2 class="search-header">Search</h2>
+  
+    <div *ngFor="let formValue of formCreator" class="form-group">
+        <label class="form-label">
+            {{formValue.name}}
+            <input type={{formValue.type}}  class="form-control search-input" placeholder="{{formValue.name}}">
+          </label>
+    </div>
+    <button type="search" class="btn btn-primary btn-lg btn-search" placeholder="Search">Search</button>
+</div>
+
+

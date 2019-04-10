@@ -1,0 +1,54 @@
+
+<div class="container">
+    <h3> Display one component using service</h3>
+  <table class="table table-striped table-block">
+    <thead></thead>
+    <tbody *ngFor="let incident of incidentRecord">
+        <tr>
+          <td>Incident Reference</td>
+          <td>{{incident.reference}}</td>
+        </tr>
+        <tr>
+          <td>Incident Date</td>
+          <td>{{incident.incidentDate}}</td>
+        </tr>
+        <tr>
+          <td>Incident Location</td>
+          <td>{{incident.incidentLocation}}</td>
+        </tr>
+        <tr>
+          <td>Policyholder Name</td>
+          <td>{{incident.policyholderName}}</td>
+        </tr>
+        <tr>
+          <td>Vehicle Registration</td>
+          <td>{{incident.vehicleRegistration}}</td>
+        </tr>
+        <tr>
+          <td>Driver Name</td>
+          <td>{{incident.driverName}}</td>
+        </tr>
+        <tr>
+          <td>Present Position</td>
+          <td>{{incident.presentPosition}}</td>
+        </tr>
+        <tr>
+          <td>Policy Holder Admits  Liability</td>
+          <td>{{incident.phAdmitsLiability}}</td>
+        </tr>
+        <tr>
+          <td>Cause Type Description</td>
+          <td>{{incident.causeTypeDescription}}</td>
+        </tr>
+        <tr>
+          <td>Fault Assessment</td>
+          <td>{{incident.faultAssessment}}</td>
+        </tr>
+        <tr>
+          <td>Incident Description</td>
+          <td>{{incident.incidentDescription}}</td>
+        </tr>
+    </tbody>
+  </table>
+</div>
+<app-display-two [incidentRecord]="incidentRecord"></app-display-two>
